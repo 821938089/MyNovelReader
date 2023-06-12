@@ -1,0 +1,27 @@
+# This workflow will generate user script using yarn and then publish to GitHub repo
+
+name: Build user script and push to repo
+
+on: [push]
+permissions:
+  contents: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: build
+        run: |
+          yarn
+          yarn build src/MyNovelReader
+      - name: push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add scripts
+          git commit -m "auto: user script generated"
+          git push
