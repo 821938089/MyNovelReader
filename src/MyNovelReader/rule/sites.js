@@ -712,7 +712,7 @@ const sites = [
     // contentHandle: false,
     titleSelector: 'h1',
     contentSelector: ".txtnav",
-    contentRemove: ".txtinfo.hide720, #txtright, .bottom-ad",
+    contentRemove: ".txtinfo.hide720, #txtright, .bottom-ad, .bottom-ad2",
     nextSelector: '.page1 a:nth-child(4)',
     prevSelector: '.page1 a:nth-child(1)',
     indexSelector: '.page1 a:nth-child(3)',
