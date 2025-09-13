@@ -3,7 +3,7 @@
 // @name           My Novel Reader
 // @name:zh-CN     小说阅读脚本
 // @name:zh-TW     小說閱讀腳本
-// @version        8.0.0
+// @version        8.0.1
 // @namespace      https://github.com/ywzhaiqi
 // @author         ywzhaiqi
 // @contributor    Roger Au, shyangs, JixunMoe、akiba9527 及其他网友
@@ -22,11 +22,11 @@
 // @grant          GM_info
 // @grant          unsafeWindow
 // @homepageURL    https://greasyfork.org/scripts/292/
-// @require        https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.2.6/vue.min.js#sha256=7166598e78fdf6bca707e6fc15a346522bf17359094916bc64cfc4efb703ab42
-// @require        https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/2.1.1/jquery.min.js#sha256=c0d4098bc8b34c6f87a3d7723988ae81214a53a0bb4a1d4d36a67640f98ed079
-// @require        https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/underscore.js/1.7.0/underscore-min.js#sha256=7b6fbd8af1c538408f2fe7eef5f6c52b85db12ab91b63277287e5e9ea83a4931
-// @require        https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/keymaster/1.6.1/keymaster.min.js#sha256=b5db262c4377030dc22c1ed176f1b8f1a29e557d0fa8afae0d185e5dc57dd3fb
-// @require        https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/crypto-js/4.1.1/crypto-js.min.js#sha256=8e3b0117f4df4be452c0b6af5b8f0a0acf9d4ade23d08d55d7e312af22077762
+// @require        https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/vue/2.2.6/vue.min.js#sha256=7166598e78fdf6bca707e6fc15a346522bf17359094916bc64cfc4efb703ab42
+// @require        https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/jquery/2.1.1/jquery.min.js#sha256=c0d4098bc8b34c6f87a3d7723988ae81214a53a0bb4a1d4d36a67640f98ed079
+// @require        https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/underscore.js/1.7.0/underscore-min.js#sha256=7b6fbd8af1c538408f2fe7eef5f6c52b85db12ab91b63277287e5e9ea83a4931
+// @require        https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/keymaster/1.6.1/keymaster.min.js#sha256=b5db262c4377030dc22c1ed176f1b8f1a29e557d0fa8afae0d185e5dc57dd3fb
+// @require        https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/crypto-js/4.1.1/crypto-js.min.js#sha256=8e3b0117f4df4be452c0b6af5b8f0a0acf9d4ade23d08d55d7e312af22077762
 
 // @connect        *
 // @connect        *://*.qidian.com/

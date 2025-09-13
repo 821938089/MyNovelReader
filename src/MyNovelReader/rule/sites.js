@@ -686,6 +686,7 @@ const sites = [
     // www.69yuedu.pro
     // www.69yuedu.co
     // www.69shu.biz
+    // www.69shuba.biz
     url: "https?://www.69shuba\\.com/txt/\\d+/\\d+",
     exampleUrl: "https://www.69shuba.com/txt/46867/31307961",
     // contentHandle: false,
