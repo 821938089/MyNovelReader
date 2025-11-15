@@ -78,7 +78,7 @@ async function getOnePage(parser, nextUrl) {
       return;
   }
 
-  sleep(config.download_delay)
+  await sleep(config.download_delay)
 
   getNextPage(nextUrl)
 };
