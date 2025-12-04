@@ -3,7 +3,7 @@
 // @name           My Novel Reader
 // @name:zh-CN     小说阅读脚本
 // @name:zh-TW     小說閱讀腳本
-// @version        8.0.2
+// @version        8.0.3
 // @namespace      https://github.com/ywzhaiqi
 // @author         ywzhaiqi
 // @contributor    Roger Au, shyangs, JixunMoe、akiba9527 及其他网友
@@ -3412,9 +3412,9 @@
     
     // '谷[婸秇鯪鐰愱瞻桮袁狲梋荬瑏鐲惗钲鉦鮪歄鎣刬頲櫦磆铩睎]',
     // '^谷[\\u4e00-\\u9fa5]{0,1}|谷[\\u4e00-\\u9fa5]{0,1}$',
-    '谷.\\s*<?/span>?',
-    '^谷[\\u4e00-\\u9fa5]$',
-    '谷[\\u4e00-\\u9fa5]?$',
+    // '谷.\\s*<?/span>?',
+    // '^谷[\\u4e00-\\u9fa5]$',
+    // '谷[\\u4e00-\\u9fa5]?$',
 
     // 低优先级替换
     ' https?://.*',
