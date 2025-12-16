@@ -1143,7 +1143,7 @@ const sites = [
     },
 
     {siteName: '天天看小说',
-        url: 'https?://(?:www|cn|tw).bg3.co/novel/pagea/.*?.html',
+        url: 'https?://(?:www|cn|tw).(?:bg3.co|wa01.com)/novel/pagea/.*?.html',
         exampleUrl: 'https://www.bg3.co/novel/pagea/lingjingxingzhe-maibaoxiaolangjun_1.html',
 
         nextSelector($doc) {
