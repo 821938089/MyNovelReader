@@ -3,7 +3,7 @@
 // @name           My Novel Reader
 // @name:zh-CN     小说阅读脚本
 // @name:zh-TW     小說閱讀腳本
-// @version        8.0.4
+// @version        8.0.5
 // @namespace      https://github.com/ywzhaiqi
 // @author         ywzhaiqi
 // @contributor    Roger Au, shyangs, JixunMoe、akiba9527 及其他网友
@@ -242,6 +242,8 @@
 // @match          *://www.dxmwx.org/read/*_*.html
 // @match          *://ixdzs8.com/read/*/*.html
 // @match          *://69shuba.cx/txt/*/*
+// @match          *://twkan.com/txt/*/*
+// @match          *://101kks.com/txt/*/*.html
 
 // legado-webui
 // @match          *://localhost:5000/bookshelf/*/*/
@@ -1716,6 +1718,36 @@
       prevSelector: '.page1 a:nth-child(1)',
       indexSelector: '.page1 a:nth-child(3)',
       useiframe: true,
+      withReferer: true,
+      },
+
+    {siteName: "台湾小说网",
+      url: "https?://twkan\\.com/txt/\\d+/\\d+",
+      exampleUrl: "https://twkan.com/txt/78813/47726772",
+      // contentHandle: false,
+      titleSelector: 'h1',
+      contentSelector: ".txtnav",
+      contentRemove: ".txtinfo.hide720, #txtright, .bottom-ad, .bottom-ad2",
+      nextSelector: '.page1 a:nth-child(4)',
+      prevSelector: '.page1 a:nth-child(1)',
+      indexSelector: '.page1 a:nth-child(3)',
+      useiframe: true,
+      withReferer: true,
+      },
+
+    {siteName: "101看书",
+      // 101kan.com
+      url: "https?://101kks\\.com/txt/\\d+/\\d+",
+      exampleUrl: "https://101kks.com/txt/21088/9051062.html",
+      // contentHandle: false,
+      titleSelector: 'h1',
+      contentSelector: ".txtnav",
+      contentRemove: ".txtinfo.hide720, #txtright, .bottom-ad, .bottom-ad2",
+      nextSelector: '.page1 a:nth-child(4)',
+      prevSelector: '.page1 a:nth-child(1)',
+      indexSelector: '.page1 a:nth-child(3)',
+      useiframe: true,
+      iframeSandbox: "allow-same-origin allow-scripts",
       withReferer: true,
       },
 
@@ -3671,8 +3703,6 @@
         : undefined,
       '「(.*?)」': '“$1”',
       '『(.)』': '$1',
-      '!': '！',
-      ':': '：',
       '[┅。…·.]{3,20}': '……',
       '[~－]{3,50}': '——'
     };
